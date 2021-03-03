@@ -16,7 +16,29 @@
     ></script>
     <script>
       $(document).ready(function () {
+        //1
         $("#ce").children(":first").css("color", "red");
+        //2
+        $("#ce").children().eq(1).clone().appendTo("#ce");
+        //3
+        $("#ce")
+          .children()
+          .eq($("#ce").children().length - 2)
+          .prependTo($("#ce").children(":first"));
+        //4
+        $(
+          "<div style='color: darkorange'>" +
+            $("#ce").children().length +
+            "</div>"
+        ).appendTo($("#ce"));
+        //5
+        $("#ce")
+          .children()
+          .each(function () {
+            var text = $(this).text();
+            console.log(text.slice(-1));
+            $(this).append(text.slice(-1));
+          });
       });
     </script>
   </head>
