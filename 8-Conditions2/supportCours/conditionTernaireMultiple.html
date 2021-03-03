@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      function valeurDeMaVariable(x) {
+        if (x == 5) {
+          alert("la variable vaut 5");
+        } else if (x == 4) {
+          alert("la variable vaut 4");
+        } else {
+          alert("la variable ne vaut pas 5");
+        }
+      }
+      valeurDeMaVariable(3);
+
+      function valeurDeMaVariableConditionTernaire(x) {
+        var chaineAAffiche =
+          x == 5
+            ? "la variable vaut 5"
+            : x == 4
+            ? "la variable vaut 4"
+            : "la variable ne vaut pas 5";
+
+        alert(chaineAAffiche);
+      }
+
+      valeurDeMaVariableConditionTernaire(3);
+
+      //A eviter
+      //   function valeurDeMaVariable(x) {
+      //     (x == 5) ? alert("la variable vaut 5") : alert("la variable ne vaut pas 5");
+      //   }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>

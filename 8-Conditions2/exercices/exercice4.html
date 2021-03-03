@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      function jourDeLaSemaine(jourdelasemaine) {
+        var aujourdhui = new Date();
+
+        var jour = aujourdhui.getDay();
+        console.log(jour);
+        //var jourFrancais;
+
+        switch (jour) {
+          case 0:
+            jourFrancais = "dimanche";
+            break;
+          case 1:
+            jourFrancais = "lundi";
+            break;
+          case 2:
+            jourFrancais = "mardi";
+            break;
+          case 3:
+            jourFrancais = "mercredi";
+            break;
+          case 4:
+            jourFrancais = "jeudi";
+            break;
+          case 5:
+            jourFrancais = "vendredi";
+            break;
+          case 6:
+            jourFrancais = "samedi";
+            break;
+          default:
+            jourFrancais = "jour inexistant";
+            break;
+        }
+
+        alert("Nous sommes " + jourFrancais + ".");
+      }
+
+      jourDeLaSemaine(3);
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>

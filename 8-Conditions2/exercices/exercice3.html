@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      function getMax(a, b, c) {
+        // Écrivez votre code ici
+        // if (a > b && a > c) {
+        //   return a;
+        // } else if (b > c) {
+        //   return b;
+        // } else {
+        //   return c;
+        // }
+        var max = a > b && a > c ? a : b > c ? b : c;
+        return max;
+      }
+
+      // Afficher la sortie
+      console.log(getMax(5, 9, 1));
+      console.log(getMax(2, 3, 10));
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>
