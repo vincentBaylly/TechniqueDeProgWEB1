@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Javascript</title>
+    <script>
+      function getValue() {
+        console.log("Le email est " + document.getElementById("email").value);
+        console.log("Le Nom est " + document.getElementById("username").value);
+        console.log(
+          "Le mot de passe est " + document.getElementById("password").value
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Form Javascript</h1>
+      <form>
+        <input type="text" id="email" name="email" placeholder="email" />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+        />
+        <button onclick="getValue()" type="button">Soumettre</button>
+      </form>
+    </div>
+  </body>
+</html>

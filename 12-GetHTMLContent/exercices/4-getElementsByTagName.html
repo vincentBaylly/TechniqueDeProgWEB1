@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getElementsByTagName Javascript</title>
+  </head>
+  <body>
+    <h1>HTML - Référence Hypertexte / href<a name="top">monlien1</a></h1>
+    <h2>HTML - Liens du Texte<a name="text">monlien2</a></h2>
+    <h2>HTML - Texte E-mail<a name="email">monlien3</a></h2>
+  </body>
+</html>
+<script>
+  //l'exercice ne demandait que de pouvoir afficher l'objet suivant
+  console.log(document.getElementsByTagName("a"));
+
+  //mais comme c'est un tableau nous pouvons afficher les elements un par un avec une boucle for
+  for (
+    var compteur = 0;
+    compteur < document.getElementsByTagName("a").length;
+    compteur++
+  ) {
+    console.log(document.getElementsByTagName("a")[compteur].innerHTML);
+  }
+
+  //ou for of
+  for (el of document.getElementsByTagName("a")) {
+    console.log(el);
+  }
+</script>

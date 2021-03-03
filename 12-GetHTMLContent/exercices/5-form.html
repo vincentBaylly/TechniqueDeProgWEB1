@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Javascript</title>
+    <script>
+      function getValue() {
+        console.log("Le Nom est " + document.getElementById("firstname").value);
+        console.log(
+          "Le Prenom est " + document.getElementById("lastname").value
+        );
+        //pour un radio c'est un peu special puisqu'ils ont tous le meme nom
+        //on doit les recuperer passe a travers une boucle
+        for (let bouton of document.getElementsByName("gender")) {
+          //verifier s'il le radio bouton est coche
+          if (bouton.checked) {
+            //pour savoir que c'est bien lui que l'utilisateur a coche
+            console.log("Le Genre est " + bouton.value);
+            //on pourra ajouter un test si c'est une certaine valeur on changera le style d'une autre balise
+            if (bouton.value == "Homme") {
+              document.getElementById("genre").style.backgroundColor = "blue";
+            } else {
+              document.getElementById("genre").style.backgroundColor = "violet";
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Form Javascript</h1>
+      <form>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Firstname"
+        />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Lastname"
+        />
+        <div>
+          <input type="radio" id="gender" name="gender" value="Homme" />
+          <label>Homme</label>
+          <input type="radio" id="gender" name="gender" value="Femme" />
+          <label>Femme</label>
+          <input type="radio" id="gender" name="gender" value="Autre" />
+          <label>Autre</label>
+        </div>
+        <button onclick="getValue()" type="button">Soumettre</button>
+      </form>
+    </div>
+    <div id="genre">Mon genre ?</div>
+  </body>
+</html>

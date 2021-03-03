@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getElementsByTagName Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>getElementsByTagName Javascript</h1>
+      <a href="#top">Haut de page </a>
+      <a href="#text">Apprenez les liens de texte </a>
+      <a href="#email">Apprenez les adresses e-mail </a>
+      <p>Para 1</p>
+      <p>Para 2</p>
+      <p>Para 3</p>
+
+      <div class="panel">Panel 1</div>
+      <section id="main">
+        <div class="panel">Panel 2</div>
+        <p>Some text...</p>
+        <div class="panel">Panel 3</div>
+      </section>
+      <input type="text" class="”input”" id="input" />
+    </div>
+  </body>
+</html>
+<script>
+  console.log(document.getElementsByTagName("a"));
+  console.log(document.getElementsByTagName("p").innerHTML);
+  console.log(document.body);
+  console.log(document.getElementsByTagName("body")[0]);
+  console.log(document.getElementById("input"));
+  var main = document.getElementById("main");
+  var eleList = main.getElementsByClassName("panel");
+
+  var arr = [];
+  for (var i = 0, len = eleList.length; i < len; i++) {
+    arr.push(eleList[i].innerHTML);
+  }
+
+  console.log(arr.join());
+  main.removeChild();
+</script>

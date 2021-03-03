@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objet Javascript</title>
+    <script>
+      function Personne(nom, age) {
+        this.nom = nom;
+        this.age = age;
+        console.log("Nouvel objet Personne créé");
+      }
+
+      var personne1 = new Personne("Alice", 25);
+      var personne2 = new Personne("Bob", 26);
+
+      //on affiche le nom de personne1
+      personne1.age = 25;
+      console.log(
+        "personne1 est " + personne1.nom + " elle a " + personne1.age
+      ); // personne1 est Alice
+      console.log("personne2 est " + personne2.nom); // personne2 est Bob
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Objet Javascript</h1>
+    </div>
+  </body>
+</html>

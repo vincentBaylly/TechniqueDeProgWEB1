@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objet Javascript</title>
+    <script>
+      function Voiture(nombreDeChevaux, couleur) {
+        this.estDemarre = false;
+        this.nombreDeChevaux = nombreDeChevaux;
+        this.couleur = couleur;
+      }
+
+      Voiture.prototype.demarrer = function () {
+        this.estDemarre = true;
+        console.log("La voiture est demarre");
+      };
+
+      Voiture.prototype.arreter = function () {
+        if (this.estDemarre) {
+          this.estDemarre = false;
+        }
+        console.log("La voiture est arrete");
+      };
+
+      var maVoiture = new Voiture(120, "rouge");
+      maVoiture.demarrer();
+      maVoiture.arreter();
+      console.log(
+        "nombre de Chevaux:  " +
+          maVoiture.nombreDeChevaux +
+          ", couleur: " +
+          maVoiture.couleur
+      );
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Objet Javascript</h1>
+    </div>
+  </body>
+</html>

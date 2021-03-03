@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getElementsByClassName Javascript</title>
+    <style>
+      .uneClasse {
+        background-color: blueviolet;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>getElementsByClassName Javascript</h1>
+      <div class="uneClasse">Lorem ipsum</div>
+      <p class="uneClasse">mon paragraphe</p>
+    </div>
+  </body>
+</html>
+<script>
+  //Exemple de tableau en javascript
+  var tabHabit = ["pantalon", "chandail", 1, true];
+  var taille = "";
+  tabHabit.push("soulier");
+  tabHabit[2];
+  for (var compteur = 0; compteur < tabHabit.length; compteur++) {
+    console.log(tabHabit[compteur]);
+  }
+  var tabHabit = new Array();
+
+  //l'objet document.getElementsByClassName("uneClasse") de type HTMLCollection est un tableau egalement on peut le parcourir
+  for (
+    var compteur2 = 0;
+    compteur2 < document.getElementsByClassName("uneClasse").length;
+    compteur2++
+  ) {
+    console.log(document.getElementsByClassName("uneClasse")[compteur2]);
+  }
+  //la boucle for revient au meme que d'afficher les elements du tableau index par index
+  //console.log(document.getElementsByClassName("uneClasse")[0]);
+  //console.log(document.getElementsByClassName("uneClasse")[1]);
+</script>
