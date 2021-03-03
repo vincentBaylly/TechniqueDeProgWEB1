@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Style Javascript</title>
+    <style>
+      .mondiv {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mondiv">Lorem ipsum</div>
+  </body>
+</html>
+<script>
+  //recuperer le premier element avec [0]
+  let elt = document.getElementsByClassName("mondiv")[0];
+  let tabElts = document.getElementsByClassName("mondiv");
+
+  //changer le style de toutes les classes
+  for (let monElt of tabElts) {
+    monElt.style.color = "blue";
+  }
+  //let elt = document.getElementById("mondiv");
+  elt.style.color = "blue"; // Change la couleur du texte de l'élément à blanche
+  elt.style.backgroundColor = "black";
+</script>

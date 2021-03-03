@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>addElement Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>addElement Javascript</h1>
+      <p id="myElement"></p>
+    </div>
+  </body>
+</html>
+<script>
+  let elt = document.getElementById("myElement");
+  let newElt = document.createElement("div");
+  newElt.innerHTML = "ma nouvelle div!!";
+  console.log(elt.innerHTML);
+  elt.innerHTML = "sdfsdfsd";
+  elt.innerHTML = newElt;
+  //elt.appendChild(newElt);
+</script>

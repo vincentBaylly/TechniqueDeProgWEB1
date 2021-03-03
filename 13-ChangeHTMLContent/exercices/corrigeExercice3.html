@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Style Javascript</title>
+    <style>
+      .mondiv {
+        color: red;
+      }
+      .monstyleajouter {
+        color: green;
+      }
+      .monnouveaustyle {
+        background-color: yellow;
+      }
+      .monstylereplace {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Lorem">Lorem ipsum</div>
+    <div id="labore" class="monnouveaustyle">ut labore et dolore</div>
+    <div id="mondiv" class="mondiv">magna aliqua</div>
+  </body>
+</html>
+<script>
+  let elt1 = document.getElementById("Lorem");
+  //ajouter une classe a notre element
+  elt1.classList.add("monstyleajouter");
+  let elt2 = document.getElementById("labore");
+  //supprimer un classe a notre element
+  elt2.classList.remove("monnouveaustyle");
+  let elt3 = document.getElementById("mondiv");
+  //verifie si l'element contient la classe
+  if (elt3.classList.contains("mondiv")) {
+    console.log(elt3 + " contient la class mondiv");
+    //replacer un classe a notre element
+    elt3.classList.replace("mondiv", "monstylereplace");
+  }
+</script>

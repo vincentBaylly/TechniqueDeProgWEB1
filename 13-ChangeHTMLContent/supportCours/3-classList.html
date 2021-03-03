@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>classList Javascript</title>
+    <style>
+      .nouvelleClasse {
+        background-color: blue;
+
+      }
+      .newClass {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>classList Javascript</h1>
+      <p id="myElement" class="">Lorem ipsum</p>
+      <input type="text" value=""></input>
+      <button onclick="changeStyle()">supprimer le style</button>
+      <button onclick="replaceStyle()">remplacer le style</button>
+    </div>
+  </body>
+</html>
+<script>
+  let elt = document.getElementById("myElement");
+  elt.classList.add("nouvelleClasse"); // Ajoute la classe nouvelleClasse à l'élément
+  function changeStyle() {
+    elt.classList.remove("nouvelleClasse"); // Supprime la classe nouvelleClasse que l'on venait d'ajouter
+  }
+  function replaceStyle() {
+    elt.classList.replace("nouvelleClasse", "newClass"); // Remplacera oldClass par newClass si oldClass était présente sur l'élément
+  }
+  console.log(elt.classList.contains("nouvelleClasse")); // Retournera false car on vient de la supprimer
+</script>

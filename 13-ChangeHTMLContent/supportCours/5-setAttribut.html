@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>setAttribut Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>setAttribut Javascript</h1>
+      <p id="myElement">
+        <input id="input" type="text" name="email" />
+      </p>
+    </div>
+  </body>
+</html>
+<script>
+  let elt = document.getElementById("input");
+  elt.setAttribute("type", "password"); // Change le type de l'input en un type password
+  elt.setAttribute("name", "my-password"); // Change le nom de l'input en my-password
+  elt.getAttribute("name"); // Retourne my-password
+</script>

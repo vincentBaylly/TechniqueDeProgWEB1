@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>innerHTML Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>innerHTML Javascript</h1>
+      <p id="myElement">Lorem ipsum</p>
+    </div>
+  </body>
+</html>
+<script>
+  let elt = document.getElementById("myElement");
+  console.log(elt.innerHTML);
+  elt.innerHTML = "J'ai change le contenu";
+</script>

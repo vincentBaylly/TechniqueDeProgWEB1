@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>addElement Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>addElement Javascript</h1>
+      <div id="main">
+        <div id="child">ma nouvelle div</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const newElt = document.createElement("div");
+  let elt = document.getElementById("main");
+  elt.appendChild(newElt);
+
+  elt.removeChild(newElt); // Supprime l'élément newElt de l'élément elt
+  elt.replaceChild(document.createElement("article"), newElt); // Remplace l'élément newElt par un nouvel élément de type article
+</script>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>textContent Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>textContent Javascript</h1>
+      <p id="myElement">Lorem ipsum</p>
+    </div>
+  </body>
+</html>
+<script>
+  let elt = document.getElementById("myElement");
+  console.log(elt.textContent);
+  elt.textContent = "J'ai change le contenu";
+</script>

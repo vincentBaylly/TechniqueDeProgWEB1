@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getElementById Javascript</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <div id="form" class="container">
+          <label>Username : </label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            required
+          />
+          <label>Password : </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked" /> Remember me
+          <button type="button" class="cancelbtn">Cancel</button>
+          Forgot <a href="#"> password? </a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  let newElt = document.createElement("div");
+  newElt.innerHTML =
+    "<label>Confirmation Mot de passe : </label><input type='text' placeholder='Enter confirm Password' name='password' required/>";
+  let elt = document.getElementById("form");
+  elt.appendChild(newElt);
+  //let eltPassword = document.getElementById("password");
+  //eltPassword.insertBefore(newElt);
+  //on peut ajouter un attribut comme ceci
+  //newElt.setAttribute("placeholder", "Enter confirm Password");
+  //voila comment modifier un attribut existant
+  newElt.setAttribute("type", "password");
+</script>
