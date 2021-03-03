@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Les boucles en Javascript</title>
+    <script>
+      /* ------------------------------ Boucle while avec des operateurs logiques ---------------------------------*/
+      var i = 0;
+      var a = 10;
+      while (i <= 2 || a > 5) {
+        console.log(i);
+        i = i + 1;
+        a = a - 1;
+      }
+
+      /* ------------------------------ Exemple d'utilisation ---------------------------------*/
+      var nombreDeSiegeRestant = 10;
+      var nombreDePassagerDanslAvion = 0;
+      while (nombreDeSiegeRestant > 0) {
+        nombreDeSiegeRestant = nombreDeSiegeRestant - 1;
+        nombreDePassagerDanslAvion = nombreDePassagerDanslAvion + 1;
+        if (nombreDePassagerDanslAvion > 10) {
+          break;
+        }
+        console.log(nombreDePassagerDanslAvion + " " + nombreDeSiegeRestant);
+      }
+
+      console.log("mon avion est complet: " + nombreDePassagerDanslAvion);
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Les boucles en Javascript</h1>
+    </div>
+  </body>
+</html>

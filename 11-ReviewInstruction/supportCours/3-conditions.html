@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      /* ------------------------------ Condition if else ---------------------------------*/
+      /* Vous pouvez changer le contenu de ces variables */
+      var var1 = "Je suis une chaîne de caractères";
+      var var2 = " concaténée à partir de plusieurs ";
+      var var3 = "sous-chaînes contenues dans var1, var2 et var3.";
+      /* Ne pas toucher à la déclaration de texteComplet */
+      var texteComplet = var1 + var2 + var3;
+      console.log(texteComplet.length);
+      /* La condition ici */
+      if (texteComplet.length > 100) {
+        //alert("C'est une grande phrase");
+      } else {
+        //alert("C'est une petite phrase");
+      }
+
+      /* ------------------------------ Condition if else if ---------------------------------*/
+      var quantity = 2;
+      var unit = "K";
+      var result;
+      var value = quantity + unit;
+      if (unit === "K") {
+        result = quantity * 1024;
+      } else if (unit === "M") {
+        result = quantity * 1048576;
+      } else if (unit === "G") {
+        result = quantity * 1073741824;
+      } else if (unit === "T") {
+        result = quantity * 1099511560222;
+      }
+
+      console.log(result);
+
+      /* ------------------------------ Condition Ternaire ---------------------------------*/
+      var statut = age >= 18 ? "adulte" : "mineur";
+
+      console.log(statut);
+
+      function valeurDeMaVariable(x) {
+        if (x == 5) {
+          alert("la variable vaut 5");
+        } else if (x == 4) {
+          alert("la variable vaut 4");
+        } else {
+          alert("la variable ne vaut pas 5");
+        }
+      }
+      valeurDeMaVariable(3);
+
+      function valeurDeMaVariableConditionTernaire(x) {
+        var chaineAAffiche =
+          x == 5
+            ? "la variable vaut 5"
+            : x == 4
+            ? "la variable vaut 4"
+            : "la variable ne vaut pas 5";
+
+        alert(chaineAAffiche);
+      }
+
+      valeurDeMaVariableConditionTernaire(3);
+
+      //A eviter
+      //   function valeurDeMaVariable(x) {
+      //     (x == 5) ? alert("la variable vaut 5") : alert("la variable ne vaut pas 5");
+      //   }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      const expr = "Papayas";
+      switch (expr) {
+        case "Oranges":
+          console.log("OPne case " + expr);
+          break; //sert a arrete l'instruction du case
+        case "Mangoes":
+        case "Papayas":
+          console.log("Multi case " + expr); // le comportement sera le meme pour les cas "Mangoes" et "Papayas"
+          break;
+        default:
+        //si on ne rentre dans aucun cas le cas defaut s'executera il est facultatif
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>
