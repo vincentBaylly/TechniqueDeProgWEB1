@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice 2 - Animation & Séquencement</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: #ccf;
+        display: inline-block;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        var isHiden = false;
+        $("#ce").click(function () {
+          if ($(".box").last().is(":hidden")) {
+            isHiden = true;
+          }
+          if (isHiden) {
+            $(".box").each(function (i, el) {
+              $(el)
+                .delay(500 * i)
+                .fadeIn(1000);
+            });
+          }
+        });
+
+        $(".box:first").click(function () {
+          $(".box").each(function (i, el) {
+            $(el)
+              .delay(500 * i)
+              .fadeOut(1000);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="item" id="exercice">
+      <h1>Exercice 2 <small>Animation & Séquencement</small></h1>
+      <div class="enonce">
+        <h2>Enoncé</h2>
+        <div>
+          <p>
+            On considère la série des div ci-dessous. Nous voulons qu'au clique
+            sur la première div on lance une animation :
+          </p>
+
+          <ol>
+            <li>
+              Les div vont dispara&icirc;tre les unes à la suite des autres, en
+              commançant par la première à gauche.
+            </li>
+            <li>
+              M&ecirc;me chose que la première question, à la différence
+              qu'elles réapara&icirc;ttront les unes à la suite des autres après
+              un délai.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="resultat">
+        <h2>Résultat</h2>
+        <div id="ce" style="height: 220px; padding: 20px">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

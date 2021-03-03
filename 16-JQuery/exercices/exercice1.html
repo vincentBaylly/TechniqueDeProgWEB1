@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice 1 Traversing & Manipulation</title>
+    <style>
+      #ce {
+        padding: 10px;
+      }
+      #ce div {
+        padding: 4px 20px;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#ce").children(":first").css("color", "red");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="item" id="exercice">
+      <h1>Exercice 1 <small>Traversing & Manipulation</small></h1>
+      <div class="enonce">
+        <h2>Enoncé</h2>
+        <div>
+          <p>
+            On considère la structure html ci-dessous. Exécuter, à l'aide jQuery
+            les manipulations suivates :
+          </p>
+
+          <ol>
+            <li>Modifier la couleur du texte de la première div (rouge)</li>
+            <li>
+              Cloner la première et l'ajouter à la fin de la liste des div
+            </li>
+            <li>Déplacer la dernière div et la mettre au début de la liste</li>
+            <li>
+              Créer une nouvelle div, l'ajouter à la fin de la liste et afficher
+              dedans le nombre total des div de la liste (y compris celle
+              ajoutée)
+            </li>
+            <li>
+              Parcourir toutes les div et y ajouter un numéro d'ordre 1, 2, ...
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="resultat">
+        <h2>Résultat</h2>
+
+        <div class="markup">
+          <div id="ce">
+            <div style="color: green">Ma première div 11111</div>
+            <div style="color: lightskyblue">Ma deuxième div 22222</div>
+            <div style="color: purple">Ma troisième div 33333</div>
+            <div style="color: darkorange">Ma quatrième div 44444</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
