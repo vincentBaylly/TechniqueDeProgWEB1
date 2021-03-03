@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Javascript</title>
+  </head>
+  <body>
+    <h1>Event Javascript</h1>
+    <div
+      onmouseover="couleur(this)"
+      style="height: 100px; width: 100px; background-color: green"
+    >
+      passer le curseur ici
+    </div>
+  </body>
+</html>
+<script type="text/javascript">
+  function couleur(lui) {
+    var couleur_cible = lui.style.backgroundColor;
+
+    alert(couleur_cible);
+  }
+</script>

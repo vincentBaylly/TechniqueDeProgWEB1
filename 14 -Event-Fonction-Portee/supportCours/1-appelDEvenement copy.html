@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Javascript</title>
+    <style>
+      .main {
+        background-color: red;
+      }
+      .MAIN {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Event Javascript</h1>
+      <input type="text" class="”input”" id="input" />
+      <div class="MAIN">test</div>
+      <DIV id="TEST"><p>
+          test
+      </p></div>
+      <div>
+        <p>Para 1</p>
+<p>Para 2</p>
+<p>Para 3</p>
+    </div>
+  </body>
+</html>
+<script>
+  console.log(document.getElementsByClassName("MAIN"));
+  console.log(document.getElementById("TEST").innerHTML);
+  console.log(document.getElementById("TEST").textContent);
+  console.log(document.getElementsByTagName("p"));
+  for(var compteur = 0; compteur < document.getElementsByTagName("p").length; compteur++){
+    console.log(document.getElementsByTagName("p")[compteur]);
+  }
+  for(var el of document.getElementsByTagName("p")){
+    console.log(el);
+  }
+</script>

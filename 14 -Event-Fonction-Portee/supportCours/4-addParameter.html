@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Javascript</title>
+  </head>
+  <body>
+    <h1>Event Javascript</h1>
+    <button onclick='couleur("#f0f0f0")'>bleu</button>
+    <button onclick='couleur("green")'>vert</button>
+    <button onclick='couleur("red")'>rouge</button>
+    <br />
+    <br />
+    <div
+      id="dv"
+      style="height: 50px; width: 50px; background-color: black"
+    ></div>
+  </body>
+</html>
+<script type="text/javascript">
+  function couleur(parametre_couleur) {
+    document.getElementById("dv").style.backgroundColor = parametre_couleur;
+  }
+</script>

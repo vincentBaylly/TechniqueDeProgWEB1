@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Event Javascript</title>
+    <style>
+      .div {
+        background-color: coral;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div" class="div"></div>
+    <button onclick="changeColor('green')">vert</button>
+    <button onclick="changeColor('yellow')">jaune</button>
+    <button onclick="changeColor('blue')">bleu</button>
+    <button onclick="changeColor('#f2f2f2')">rouge</button>
+  </body>
+</html>
+<script>
+  function changeColor(color) {
+    //document.getElementById("div").classList.remove("div");
+    document.getElementById("div").style.backgroundColor = color;
+    //document.getElementById("div").style.height = "50px";
+    //document.getElementById("div").style.width = "50px";
+  }
+</script>

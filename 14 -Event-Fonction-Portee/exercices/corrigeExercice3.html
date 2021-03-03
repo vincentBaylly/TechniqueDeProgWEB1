@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Event Javascript</title>
+  </head>
+  <body>
+    <label for="toys">Choose a toy:</label>
+    <select name="toys" id="toys">
+      <option value="Auto">Auto</option>
+      <option value="Toutou">Toutou</option>
+      <option value="Gameboard">Jeu de societe</option>
+    </select>
+    <button onclick="addFonction()">Ajouter un fonction onchange</button>
+    <div id="selected"></div>
+  </body>
+</html>
+<script>
+  function addFonction() {
+    document.getElementById("toys").onchange = onChangeFunction;
+    //attention a ne pas mettre les parentheses ce qui appelerait la fonction onChangeFunction()
+  }
+
+  function onChangeFunction() {
+    document.getElementById("selected").innerHTML = document.getElementById(
+      "toys"
+    ).value;
+  }
+</script>

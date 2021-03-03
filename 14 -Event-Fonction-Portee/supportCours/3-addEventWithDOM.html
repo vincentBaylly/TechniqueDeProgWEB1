@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Javascript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Event Javascript</h1>
+      <button onclick="callAfterClick()">
+        Ajout d'un action l'autre bouton
+      </button>
+      <button id="button2">Pas d'action sur le bouton</button>
+    </div>
+  </body>
+</html>
+<script>
+  function maDeuxiemeFonction() {
+    console.log("appel de la deuxieme fonction");
+  }
+  function callAfterClick() {
+    document.getElementById("button2").onclick = maDeuxiemeFonction;
+    document.getElementById("button2").innerHTML =
+      "Maintenant on peut cliquer!";
+  }
+</script>

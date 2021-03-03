@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Event Javascript</title>
+    <style>
+      body {
+        font-family: montserrat, arial, verdana;
+      }
+      .validation {
+        box-sizing: border-box;
+        color: rgb(40, 167, 69);
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 12.8px;
+        font-weight: 400;
+        height: 19px;
+        line-height: 19.2px;
+        margin-top: 4px;
+        text-align: left;
+        text-size-adjust: 100%;
+        width: 510px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      .container {
+        width: 50%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: 20px auto auto auto;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      button {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.42857;
+        display: inline-block;
+        background-color: #359900;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        color: #eeeeee;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px 15px;
+        white-space: nowrap;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        font-family: Roboto, sans-serif;
+        text-decoration: none;
+        outline: none;
+        margin-bottom: 0;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        background-image: none;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #008329;
+      }
+      button:hover span {
+        padding-right: 25px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <form> -->
+      <!-- lastname -->
+      <div id="informationNom" class="validation"></div>
+      <label for="lastname">Nom :</label>
+      <input
+        type="text"
+        id="Nom"
+        name="lastname"
+        onfocus="addInfo('Nom')"
+        onblur="addInfo('Nom')"
+      />
+      <!-- firstname -->
+      <div id="informationPrenom" class="validation"></div>
+      <label for="firstname">Prenom :</label>
+      <input
+        type="text"
+        id="Prenom"
+        name="firstname"
+        onfocus="addInfo('Prenom')"
+        onblur="addInfo('Prenom')"
+      />
+      <!-- email -->
+      <div id="informationCourriel" class="validation"></div>
+      <label for="email">Courriel :</label>
+      <input
+        type="text"
+        id="Courriel"
+        name="email"
+        onfocus="addInfo('Courriel')"
+        onblur="addInfo('Courriel')"
+      />
+      <!-- message -->
+      <div id="informationMessage" class="validation"></div>
+      <label for="message">Message :</label>
+      <textarea
+        name="message"
+        id="Message"
+        onfocus="addInfo('Message')"
+        onblur="addInfo('Message')"
+      ></textarea>
+      <button class="button" onclick="getMessage()">Submit</button>
+      <!-- </form> -->
+      <br />
+      <br />
+      <div id="values"></div>
+    </div>
+  </body>
+</html>
+<script src="corrigeExercice5.js"></script>
