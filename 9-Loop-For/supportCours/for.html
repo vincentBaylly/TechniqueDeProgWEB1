@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Les variables en Javascript</title>
+    <script>
+      //   for ([expressionInitiale]; [condition]; [expressionIncrément]) {
+      //     instruction;
+      //   }
+      //   var string = "Bonjour";
+
+      //   for (var compteur = 0; compteur < 5; compteur++) {
+      //     console.log(string);
+      //   }
+
+      let string = "Bonjour";
+
+      for (var compteur = 0; compteur < 6; compteur = compteur + 1) {
+        console.log(string);
+      }
+
+      /* ------------------------- For of  ------------------------------*/
+      let arr = [3, 5, 7];
+
+      for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]); // affiche 3, 5, 7 dans la console
+      }
+
+      for (let valeurTableau of arr) {
+        console.log(valeurTableau); // affiche 3, 5, 7 dans la console
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Les variables en Javascript</h1>
+    </div>
+  </body>
+</html>
