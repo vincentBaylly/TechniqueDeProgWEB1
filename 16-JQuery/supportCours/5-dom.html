@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>jQuery Exemple</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        //la fonction attr()
+        console.log($("em").attr("title"));
+        //la fonction css()
+        $("p").css({ color: "red", "background-color": "green" });
+        //$("p").css("background-color", "red");
+        $("div").click(function () {
+          //var content = $(this).html();
+          //alert(content);
+          //$("#result").text(content);
+          $(this).replaceWith("<h1>JQuery is Great</h1>");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Utilisation de JQuery</h1>
+    <p>mon paragrape</p>
+    <div>mon element div</div>
+    <em title="mon attribut title">Ceci est un paragraphe</em>
+  </body>
+</html>

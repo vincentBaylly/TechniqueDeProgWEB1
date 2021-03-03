@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>jQuery Exemple</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("p").dblclick(function () {
+          $(this).hide();
+        });
+        //mouseenter
+        // $("p").mouseenter(function () {
+        //   alert("Vous etes passe sur mon paragraphe");
+        // });
+        //mouseleave
+        // $("p").mouseleave(function () {
+        //   alert("Vous avez quitte mon paragraphe");
+        // });
+        //mousedown
+        // $("p").mousedown(function () {
+        //   alert("Mouse down sur mon paragraphe!");
+        // });
+        //mouseup
+        // $("p").mouseup(function () {
+        //   alert("Mouse up sur mon paragraphe!");
+        // });
+        //hover;
+        $("p").hover(
+          function () {
+            console.log("Vous etes passe sur mon paragraphe");
+          },
+          function () {
+            console.log("Vous avez quitte mon paragraphe");
+          }
+        );
+        //focus
+        // $("input").focus(function () {
+        //   $(this).css("background-color", "#cccccc");
+        // });
+        //blur
+        // $("input").blur(function () {
+        //   $(this).css("background-color", "#ffffff");
+        // });
+        //on
+        // $("p").on("click", function () {
+        //   $(this).hide();
+        // });
+        //plusieurs evenements
+        // $("p").on({
+        //   mouseenter: function () {
+        //     $(this).css("background-color", "lightgray");
+        //   },
+        //   mouseleave: function () {
+        //     $(this).css("background-color", "lightblue");
+        //   },
+        //   click: function () {
+        //     $(this).css("background-color", "yellow");
+        //   },
+        // });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Utilisation de JQuery</h1>
+    <p>mon paragrape</p>
+  </body>
+</html>

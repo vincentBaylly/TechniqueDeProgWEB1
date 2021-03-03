@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>jQuery Exemple</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        //selecteur de balise
+        //$("p").hide();
+        //selecteur d id
+        //$("#test").hide();
+        //document.getElementById("test");
+        //selecteur de class
+        //$(".test").hide();
+        $(".test:first").hide();
+        //document.getElementsByClassName("test");
+        //selecteut d attribut
+        //$("[href]").hide();
+        //selecteur pour tout les elements
+        //$("*").hide();
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Utilisation de JQuery</h1>
+    <p>mon paragrape</p>
+    <div id="test">mon element avec l id test</div>
+    <div class="test">mon element avec la class test</div>
+    <p class="test">mon paragrape je ne suis le premier</p>
+    <a href="https://www.google.com">mon element avec un attribut href</a>
+    <em title="mon attribut title">Ceci est un paragraphe</em>
+  </body>
+</html>

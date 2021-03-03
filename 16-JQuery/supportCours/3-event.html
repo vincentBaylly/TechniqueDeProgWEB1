@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>jQuery Exemple</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      // function buttonClique(){
+      //     alert("bouton clique");
+      // }
+
+      $(document).ready(function () {
+        $("p").click(function () {
+          alert("vous avez clique sur mon paragraphe");
+        });
+      });
+
+      // function () {
+      //     alert("vous avez clique sur mon paragraphe");
+      //   }
+    </script>
+  </head>
+
+  <body>
+    <h1>Utilisation de JQuery</h1>
+    <p>mon paragraphe</p>
+    <!-- <p>mon deuxieme paragraphe</p> -->
+    <!-- <button onclick="buttonClique()"></button> -->
+  </body>
+</html>

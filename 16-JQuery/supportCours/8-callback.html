@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>jQuery Exemple</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script>
+      function salutation(name) {
+        alert("Bonjour " + name);
+      }
+
+      function aurevoir(name) {
+        alert("Aurevoir " + name);
+      }
+
+      function processUserInput(callback) {
+        var name = prompt("Entrez votre nom.");
+        callback(name);
+        //var age = prompt("Entrez votre age.");
+      }
+
+      processUserInput(salutation);
+
+      processUserInput(aurevoir);
+    </script>
+  </head>
+
+  <body>
+    <h1>callback</h1>
+  </body>
+</html>
