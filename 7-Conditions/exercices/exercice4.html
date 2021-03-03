@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      var value = 0;
+      var value = 1;
+      var value = 2;
+      var value = "0";
+      var value = "1";
+      var value = "2";
+      if (isNaN(value)) {
+        console.log("La valeur est une chaîne de caractères");
+      } else {
+        console.log("La valeur est un nombre");
+      }
+
+      switch (parseInt(value)) {
+        case 0:
+        case 1:
+        case 2:
+          console.log("La valeur est supérieure à 0");
+          console.log("La valeur est supérieure à 1");
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>

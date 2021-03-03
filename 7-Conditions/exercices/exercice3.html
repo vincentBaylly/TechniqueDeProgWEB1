@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      var shortenBytes = "123122150K";
+      //3 - 'two potatoes'
+      console.log(shortenBytes.length);
+      console.log(shortenBytes.substr(2));
+      console.log(shortenBytes.substr(2));
+      //sous chaine de caratere
+      //shortenBytes.substr(indexdeDebut, indexdeFin);
+      var tailleShortEnBytes = shortenBytes.length;
+      var letter = shortenBytes.substr(tailleShortEnBytes - 1);
+      //2 - toUpperCase();
+      var bytes;
+      var number = parseInt(shortenBytes.substr(0, shortenBytes.length - 1));
+      //3 - if (!isNan(number)) {
+      switch (letter) {
+        case "T":
+          bytes = number * 1024 * 1024 * 1024 * 1024;
+          break;
+        case "G":
+          bytes = number * 1024 * 1024 * 1024;
+          break;
+        case "M":
+          bytes = number * 1024 * 1024;
+          break;
+        case "K":
+          bytes = number * 1024;
+          break;
+        default:
+          bytes = number;
+      }
+      //3 -  } else {
+      //3 -    bytes = false;
+      //3 -  }
+
+      //console.log(bytes);
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>
