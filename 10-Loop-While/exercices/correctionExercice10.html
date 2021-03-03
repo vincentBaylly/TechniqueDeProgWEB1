@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Les boucles en Javascript</title>
+    <script>
+      var intTab = [2, 3, 6, 34, 7, 8, 2];
+      var doublons = [];
+      for (var compteur1 = 0; compteur1 < intTab.length - 1; compteur1++) {
+        for (
+          var compteur2 = compteur1 + 1;
+          compteur2 < intTab.length;
+          compteur2++
+        ) {
+          if (intTab[compteur1] === intTab[compteur2]) {
+            doublons.push(intTab[compteur1]);
+          }
+        }
+      }
+      if (doublons.lentgh > 0) {
+        console.log(doublons);
+      } else {
+        console.log(null);
+      }
+
+      // var elimination = (arr) =>
+      //   arr.find((v) => arr.indexOf(v) != arr.lastIndexOf(v) || null);
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Les boucles en Javascript</h1>
+    </div>
+  </body>
+</html>

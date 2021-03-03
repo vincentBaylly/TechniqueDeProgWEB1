@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Les boucles en Javascript</title>
+    <script>
+      // generate secret number is a random integer between 1 and 12
+      const MIN = 1;
+      const MAX = 12;
+
+      let secretNumber = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN; //1 - 12
+      do {
+        var input = prompt("Choisir un chiffre entre " + MIN + " et " + MAX);
+        console.log(input);
+      } while (secretNumber != input);
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Les boucles en Javascript</h1>
+    </div>
+  </body>
+</html>
