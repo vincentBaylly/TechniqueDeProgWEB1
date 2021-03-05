@@ -40,6 +40,24 @@
             $(this).append(text.slice(-1));
           });
       });
+
+      //Comprendre les tags JQuery:
+      /*$("#ce:first-child")*/
+      $(".main:first-child");
+      // <div>
+      //   <div class="main">
+      //   </div>
+      //   <div id="main">
+      //   </div>
+      // </div>
+      $("#ce div:first-child");
+      $("#ce").children(":first");
+      // <div id="ce">
+      //   <div >
+      //   </div>
+      //   <div>
+      //   </div>
+      // </div>
     </script>
   </head>
   <body>
