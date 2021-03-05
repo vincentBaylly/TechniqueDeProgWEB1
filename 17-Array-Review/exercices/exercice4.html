@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Revision</title>
+  </head>
+
+  <body>
+    <h1>Revision</h1>
+    <h2>Acéracées</h2>
+    <div id="aceracees"></div>
+    <h2>Conifere</h2>
+    <div id="coniferes"></div>
+    <h2>Caprifoliacées</h2>
+    <div id="caprifoliacees"></div>
+  </body>
+  <script type="text/javascript">
+    //Avec l'ecriture basique
+    var myTrees = [
+      "Pin",
+      "Sapin",
+      "Erable",
+      "Abelia",
+      "Kolkwitzia",
+      "Laurier-tin",
+      "Sureau",
+      "Viorne-obier",
+    ];
+
+    //Avec le constructeur de tableau
+    // var myTrees = new Array(
+    //   "Pin",
+    //   "Sapin",
+    //   "Erable",
+    //   "Abelia",
+    //   "Kolkwitzia",
+    //   "Laurier-tin",
+    //   "Sureau",
+    //   "Viorne-obier"
+    // );
+
+    var aceraceesTab = [];
+    var coniferesTab = [];
+    var caprifoliaceesTab = [];
+    for (var compteur = 0; compteur < myTrees.length; compteur++) {
+      switch (myTrees[compteur]) {
+        case "Erable":
+          aceraceesTab.push(myTrees[compteur]);
+          break;
+        case "Abelia":
+        case "Kolkwitzia":
+        case "Laurier-tin":
+        case "Sureau":
+        case "Viorne-obier":
+          caprifoliaceesTab.push(myTrees[compteur]);
+          break;
+        case "Pin":
+        case "Sapin":
+          coniferesTab.push(myTrees[compteur]);
+          break;
+      }
+    }
+
+    document.getElementById("aceracees").textContent = aceraceesTab.join();
+    document.getElementById("coniferes").innerHTML = coniferesTab.join();
+    document.getElementById(
+      "caprifoliacees"
+    ).innerHTML = caprifoliaceesTab.join();
+  </script>
+</html>

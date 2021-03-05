@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Revision</title>
+  </head>
+
+  <body>
+    <h1>Main heading: <i>my first webpage</i></h1>
+    <p>This is my <strong>first</strong> webpage!</p>
+    <h2>Second heading</h2>
+    <div class="container">my div</div>
+    <p>This is the second paragraph of my <em>first webpage</em>.</p>
+    <p><b>Note</b>: Typical example for the &lt;b&gt;-tag.</p>
+    <div id="monparagraphe">Entrez vos informations</div>
+    Entrez votre nom: <input type="text" onblur="filledField(this)" />
+  </body>
+  <script>
+    //avec les evenements
+    function filledField(field) {
+      if (!document.getElementsByTagName("input")[0].value) {
+        field.focus();
+      }
+    }
+
+    var content = "";
+    for (var elt of document.getElementsByTagName("p")) {
+      content = content + elt.innerHTML + "<br/>";
+    }
+
+    for (var elt of document.getElementsByClassName("container")) {
+      content = content + elt.innerHTML + "<br/>";
+    }
+
+    document.getElementById("monparagraphe").innerHTML = content;
+  </script>
+</html>

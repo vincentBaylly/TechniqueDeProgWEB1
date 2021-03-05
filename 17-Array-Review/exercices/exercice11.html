@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Revision</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <form> -->
+      <!-- lastname -->
+      <div id="informationNom" class="validation"></div>
+      <label for="lastname">Nom :</label>
+      <input
+        type="text"
+        id="Nom"
+        name="lastname"
+        onfocus="addInfo('Nom')"
+        onblur="addInfo('Nom')"
+      />
+      <!-- firstname -->
+      <div id="informationPrenom" class="validation"></div>
+      <label for="firstname">Prenom :</label>
+      <input
+        type="text"
+        id="Prenom"
+        name="firstname"
+        onfocus="addInfo('Prenom')"
+        onblur="addInfo('Prenom')"
+      />
+      <!-- email -->
+      <div id="informationCourriel" class="validation"></div>
+      <label for="email">Courriel :</label>
+      <input
+        type="text"
+        id="Courriel"
+        name="email"
+        onfocus="addInfo('Courriel')"
+        onblur="addInfo('Courriel')"
+      />
+      <!-- subject -->
+      <label for="subject">Sujet:</label>
+      <select name="Subject" id="subject">
+        <option value="Projet">Projet</option>
+        <option value="Info">Information</option>
+        <option value="Support">Support</option>
+      </select>
+      <!-- message -->
+      <div id="informationMessage" class="validation"></div>
+      <label for="message">Message :</label>
+      <textarea
+        name="message"
+        id="Message"
+        onfocus="addInfo('Message')"
+        onblur="addInfo('Message')"
+      ></textarea>
+      <button class="button" onclick="getMessage()">Submit</button>
+      <!-- </form> -->
+      <br />
+      <br />
+      <div id="values"></div>
+    </div>
+  </body>
+  <script>
+    function addInfo(fieldName) {
+      var id = "information" + fieldName;
+      if (!document.getElementById(fieldName).value) {
+        document.getElementById(id).innerHTML = "Remplir le " + fieldName;
+      } else {
+        document.getElementById(id).innerHTML = "";
+      }
+    }
+
+    function getMessage() {
+      var LastName = document.getElementById("Nom").value;
+      var firstName = document.getElementById("Prenom").value;
+      var email = document.getElementById("Courriel").value;
+      var subject = document.getElementById("Subject").value;
+      var message = document.getElementById("Message").value;
+      document.getElementById("values").innerHTML =
+        LastName +
+        " " +
+        firstName +
+        "<br>" +
+        "Courriel: " +
+        email +
+        "<br>" +
+        subject +
+        "<br>" +
+        "Vous a envoye le message: " +
+        message +
+        "<br>";
+    }
+  </script>
+</html>

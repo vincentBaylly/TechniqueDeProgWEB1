@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Array</title>
+
+    <script type="text/javascript">
+      var maVariable = "test";
+      maVariable.length;
+      maVariable = maVariable + "test";
+      //maVariable.concat;
+      var monTableau = new Array("Papayas", "Ananas", 1, true, maVariable);
+      //console.log(monTableau);
+      //monTableau.push("Orange");
+      //console.log(monTableau);
+      // monTableau.unshift("Banana");
+      // monTableau.shift();
+      //monTableau.pop();
+      // console.log(monTableau.concat("test"));
+      // console.log(monTableau);
+      var monTableau2 = new Array(1, 4, 3, 10, 7);
+      var monTableau3 = [1, 2, 3, 5];
+      var tableauFusion = monTableau2.concat(monTableau3);
+      console.log(tableauFusion);
+      // monTableau3.push(8);
+
+      var fruits = ["Apple", "Banana"];
+
+      fruits.forEach(function (item, index, array) {
+        console.log(item, index);
+      });
+
+      function maFunction(item, index) {
+        console.log(item, index);
+      }
+
+      fruits.forEach(maFunction(item, index));
+    </script>
+  </head>
+
+  <body>
+    <h1>Array</h1>
+  </body>
+</html>

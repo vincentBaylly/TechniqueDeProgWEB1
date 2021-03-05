@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Revision</title>
+    <style>
+      .notreparagraphe {
+        background-color: blue;
+      }
+      .leurparagraphe {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <p class="monparagraphe"></p>
+    <p class="sonparagraphe"></p>
+  </body>
+  <script>
+    for (var elt of document.getElementsByTagName("p")) {
+      if (elt.classList.contains("monparagraphe")) {
+        elt.classList.replace("monparagraphe", "notreparagraphe");
+      } else if (!elt.classList[0]) {
+        elt.classList.add("leurparagraphe");
+      } else {
+        elt.classList.remove(elt.classList[0]);
+      }
+    }
+  </script>
+</html>

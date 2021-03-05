@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Revision</title>
+  </head>
+
+  <body>
+    <h1>Revision</h1>
+  </body>
+  <script type="text/javascript">
+    var myTool = "hammer";
+    var price = 15;
+
+    switch (myTool) {
+      case "drill":
+        price = 20 - (20 * 15) / 100;
+        break;
+      case "shovel":
+        price = price - (price * 5) / 100;
+      case "rake":
+      case "shears":
+        price = price - (price * 20) / 100;
+        break;
+      default:
+        price = 10;
+    }
+    console.log(price);
+  </script>
+</html>
