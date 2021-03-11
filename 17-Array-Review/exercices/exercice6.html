@@ -5,25 +5,31 @@
 
   <body>
     <h1>Revision</h1>
+    Entrez un nombre: <input type="text" id="number" />
+    <button onclick="sum()">calculer la somme</button>
+    <div id="result"></div>
   </body>
   <script>
-    // programme pour trouver la somme des nombres positifs
-    // si l'utilisateur entre un nombre négatif, la boucle se termine
-    // le nombre négatif entré n'est pas ajouté à la somme
+    function sum() {
+      // programme pour trouver la somme des nombres positifs
+      // si l'utilisateur entre un nombre négatif, la boucle se termine
+      // le nombre négatif entré n'est pas ajouté à la somme
 
-    let sum = 0;
+      let sum = 0;
 
-    // prendre la saisie de l'utilisateur
-    let number = parseInt(prompt("Enter a number: "));
-    let compteur = 0;
+      // prendre la saisie de l'utilisateur
+      let number = parseInt(document.getElementById("number").value);
+      console.log(number);
+      let compteur = 0;
 
-    while (compteur <= number) {
-      // ajouter tous les nombres positifs
-      sum += compteur;
-      compteur++;
+      while (compteur <= number) {
+        // ajouter tous les nombres positifs
+        sum += compteur;
+        compteur++;
+      }
+
+      // afficher la somme
+      document.getElementById("result").innerHTML = `la somme est ${sum}.`;
     }
-
-    // afficher la somme
-    console.log(`The sum is ${sum}.`);
   </script>
 </html>
