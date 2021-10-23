@@ -28,10 +28,12 @@ This content is use for the course:
 
 It contents the course materials and exercices:
 
-<!-- 1 - La Programmation - Choisir un outil
-2 - Apprendre à rédiger un algorithme 1
-3 - Apprendre à rédiger un algorithme 2
-Test 1 - Algorithme
+<!-- 1 - La Programmation - Choisir un outil -->
+
+2 - Apprendre à rédiger un algorithme 1<br/>
+3 - Apprendre à rédiger un algorithme 2<br/>
+
+<!-- Test 1 - Algorithme
 4 - Initiation à la modélisation et à UML
 5 - De l algorithme à la syntaxe -->
 
