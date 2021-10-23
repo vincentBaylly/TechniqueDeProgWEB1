@@ -1,0 +1,5 @@
+Nom : Algo1
+Role : mes premieres instructions
+Debut
+    /* voici mon premier Algo  */
+Fin

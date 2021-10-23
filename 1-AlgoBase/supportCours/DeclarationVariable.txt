@@ -1,0 +1,7 @@
+Nom : Algo1
+Role : mes premieres instructions
+Variables: variable1: entier /*, variable2 , variable3, …, variablen */
+Debut
+    /* voici mon premier Algo  */
+    variable1 = 1
+Fin

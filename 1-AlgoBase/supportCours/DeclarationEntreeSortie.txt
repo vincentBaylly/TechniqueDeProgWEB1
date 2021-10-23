@@ -1,0 +1,7 @@
+Nom : AlgoEntreeSortie
+Role : "Demander le nom et stocker la saisie de l’utilisateur"
+Variables: nom: chaine
+Debut
+    ecrire("comment t'appelles tu ?")
+    nom = lire()
+Fin

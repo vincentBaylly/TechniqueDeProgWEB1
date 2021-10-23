@@ -1,0 +1,16 @@
+/* Declaration de la procedure */
+Procedure
+Nom : votreAge
+Role: "Demande a l utilisateur son age"
+Variables: age: chaine
+Debut
+    ecrire(“Quel est votre age ?”)
+    age = lire()
+Fin
+
+/* Appel de la procedure dans un Algo */
+Nom : AppelMaProcedure
+Role : "Appel la procedure votreAge"
+Debut
+    votreAge
+Fin

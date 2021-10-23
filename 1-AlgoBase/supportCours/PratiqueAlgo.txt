@@ -1,0 +1,6 @@
+Nom : HelloYou
+Role : "Concatener des chaines"
+Variables: texte: chaine
+Debut
+    texte = "Bonjour" + " tout le monde"
+Fin

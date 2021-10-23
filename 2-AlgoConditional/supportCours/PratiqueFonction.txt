@@ -1,0 +1,15 @@
+Fonction
+Nom : votreAge
+Parametres: informations nécessaires en entrée
+Rôle : "ma premiere fonction"
+Début
+    écrire(“Quel est votre age ?”)
+    retourne lire()
+Fin
+
+Nom : AppelMaFonction
+Rôle : "mes premieres instructions"
+Variables: age: entier
+Début
+    votreAge
+Fin

@@ -1,0 +1,14 @@
+Nom: NombreLePlusGrand
+Rôle: "Affichage du nombre le plus grand"
+Variables: a, b: entier
+Début
+    écrire(“Insérer deux entiers”)
+    a = lire()
+    b = lire()
+    écrire(“le nombre le plus grand est :”)
+    si a > b alors
+        écrire(a)
+    Sinon
+        écrire(b)
+    finsi
+Fin

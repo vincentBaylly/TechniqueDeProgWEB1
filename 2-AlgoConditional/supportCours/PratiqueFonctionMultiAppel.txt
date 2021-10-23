@@ -1,0 +1,19 @@
+Nom : MultiMultiplication
+Role: "Addition de plusieurs nombres"
+Variables: multi1, multi2, multi3, multi4, multi5 : entier
+Fonction Produit
+Parametres: valeurAMultiplier1, valeurAMultiplier2: entier
+Type: entier
+Variables: m : entier
+Debut
+    m = valeurAadditionner1 x valeurAadditionner2
+    retourne M
+Fin
+Debut/*Début de l’algorithme*/
+    /* on va maintenant appeler 5 fois notre fonction */
+    multi1 = Produit(1, 5) /*Appel de la fonction avec les paramètres*/
+    multi2 = Produit(2, 5)
+    multi3 = Produit(3, 5)
+    multi4 = Produit(4, 5)
+    multi5 = Produit(5, 5)
+Fin. /*Fin de l’algorithme*/

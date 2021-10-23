@@ -1,0 +1,7 @@
+Nom : Votre Age
+Role : "Demander le nom et stocker la saisie de l utilisateur"
+Variables: age: chaine
+Debut
+    ecrire("Quel est votre age ?")
+    age= lire()
+Fin

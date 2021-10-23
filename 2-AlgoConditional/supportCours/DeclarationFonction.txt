@@ -1,0 +1,18 @@
+/* Declaration de la fonction */
+Fonction
+Nom : votreNom
+Paramètres: /* Informations nécessaires en entrée */
+Type : /* Type de retour de la fonction" */
+Rôle : "ma premiere fonction"
+Début
+    écrire("comment t'appelles tu ?")
+    retourne lire()
+Fin
+
+/* Appel de la fonction */
+Nom : AppelFonction
+Rôle : "Appel la Fonction pour demander le nom de l’utilisateur"
+Variables: nom: chaîne de caractères
+Début
+    nom = votreNom
+Fin

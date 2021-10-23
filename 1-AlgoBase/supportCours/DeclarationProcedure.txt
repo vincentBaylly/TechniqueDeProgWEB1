@@ -1,0 +1,17 @@
+/* Declaration de la procedure */
+Procedure
+Nom : MaProcedure
+Parametres: /* informations necessaires en entree */
+Role : "ma premiere procedure"
+Variables: nom: chaine
+Debut
+    ecrire("comment t'appelles tu ?")
+    nom = lire()
+Fin
+
+/* Appel de la procedure */
+Nom : AppelProcedure
+Role : "Appel la procedure pour demander le nom de l utilisateur"
+Debut
+    MaProcedure
+Fin
