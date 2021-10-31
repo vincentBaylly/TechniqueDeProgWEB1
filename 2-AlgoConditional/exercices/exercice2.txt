@@ -1,0 +1,6 @@
+Nom : Hello
+Role   : Concaténation de bonjour et votre nom
+Variables: phrase: chaine de caractere
+Début
+    phrase="Bonjour" + " Vincent"
+Fin

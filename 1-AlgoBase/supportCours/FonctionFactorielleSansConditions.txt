@@ -1,0 +1,22 @@
+Fonction
+Nom: ProduitFactorielle
+Parametre: nombre: entier
+Type: entier
+Debut
+    retourne nombre * ProduitFactorielle(nombre-1)
+    /* 2 * ProduitFactorielle(1)*/
+    /* 1 * ProduitFactorielle(0)*/
+Fin
+
+Nom : Factorielle
+Role : "faire un factorielle"
+Variables: nombre,resultat: entier
+Debut
+    ecrire("Saisir un nombre")
+    nombre = lire();
+    /* operation factorielle */
+    /*resultat = ((nombre * (nombre - 1)) *  (nombre - 2))...*/
+    ProduitFactorielle(nombre)
+    /* 0 */
+    /* ((5 * 4) * 3) * 2 * 1*/
+Fin

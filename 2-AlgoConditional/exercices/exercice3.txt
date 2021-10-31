@@ -1,0 +1,18 @@
+/*Declaration d'une structure conditionnelle*/
+Nom: Nombre le plus grand
+Role: Affichage du nombre le plus grand
+Variables: a: entier, b: entier
+
+Début
+    /*ecrire("Insérer deux entiers")
+    a=lire()
+    b=lire()*/
+    a=10
+    b=14
+    ecrire("le nombre le plus grand est:")
+    Si a>b alors
+        ecrire(a)
+    Sinon 
+        ecrire(b)
+    Finsi
+Fin

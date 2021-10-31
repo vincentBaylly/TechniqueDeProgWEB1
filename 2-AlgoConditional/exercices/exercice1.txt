@@ -1,0 +1,9 @@
+Nom : Hello
+Role   : Concaténation de bonjour et votre nom
+Variables: phrase, nom: chaine
+Début
+    /*ecrire("Saisez votre nom ?")*/
+    nom = lire()
+    phrase="Bonjour " + nom
+    /*ecrire(phrase)*/
+Fin

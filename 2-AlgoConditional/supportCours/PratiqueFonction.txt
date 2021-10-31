@@ -11,5 +11,6 @@ Nom : AppelMaFonction
 Rôle : "mes premieres instructions"
 Variables: age: entier
 Début
-    votreAge
+    age = votreAge
+    /* On peut maintenant utiliser le resultat de la fonction */
 Fin

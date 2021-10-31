@@ -1,0 +1,52 @@
+Nom : Division
+Rôle: division de 2 nombres saisies par l’utilisateur
+Variables: a, b: entier
+Début
+    écrire(“Insérez 2 entiers”)
+    a = lire()
+    b = lire()
+    écrire(“le resultat de la division est:”)
+    Si (a = 0 ou b=0) alors
+        ecrire(“on ne peut pas diviser par 0”)
+    Sinon
+        ecrire(a/b)
+    finsi
+Fin
+
+/* Autre solution possible */
+Nom : Division de deux entiers
+Role : "Diviser par 2 nombre saisie"
+Variables : nombre : entier
+Début
+    écrire("Inscrire deux nombre :")
+    nombre1=lire()
+    nombre2=lire()
+    
+    Si (nombre1 >0 ou nombre2 >0) alors
+        nombre1 / nombre2
+    Sinon
+        ecrire("impossible")  
+    Finsi
+   
+Fin
+
+/*
+    Comprendre les opérations booleennes
+    a=1 ---> faux
+    b=0 ---> vrai
+    faux ou vrai ---> vrai
+
+    a=0 ---> vrai
+    b=1 ---> faux
+    vrai ou faux ---> vrai
+
+    a ou b = b ou a
+
+    a=0 ---> vrai
+    b=0 ---> vrai
+    vrai ou vrai ---> vrai
+
+    a=1 ---> faux
+    b=1 ---> faux
+    faux ou faux ---> faux
+*/
