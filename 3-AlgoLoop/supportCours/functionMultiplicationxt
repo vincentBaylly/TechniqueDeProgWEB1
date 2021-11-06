@@ -1,0 +1,48 @@
+Fonction 
+Nom: FoisCinq
+Role: "multiplier le chiffre envoyé en paramètre par le chiffre 5"
+/* on peut demander un parametre
+    en entree de notre fonction
+*/
+Paramètres:chiffre1 :entier
+Variables: resultat: entier
+Type: entier
+Début
+    /* Idealement on mettra les interactions
+    avec l'utilisateur dans l'algorithme pour
+    ne pas ajouter des responsabilites a notre fonction */
+    /*ecrire("entrer un chiffre")
+    chiffre1 = lire()*/
+    resultat = chiffre1 * 5
+    retourne resultat
+    /*  une fois l'instruction retourne
+        le code declarer ne sera pas executer
+        On ne appel ca du code mort
+        ex:
+        resultat = chiffre1 * 12
+        ne sera pas executer
+    */
+    resultat = chiffre1 * 12
+Fin
+
+Nom: multiplication
+Role: "Appel fonction FoisCinq"
+Variables: chiffre1 :entier
+debut
+    /* On peut appeler notre fonction
+        avec la valeur de parametre 
+        dans des parentheses */
+    foisCinq(1)
+    /* On peut demander à l'utilisateur
+    la valeur du parametre pour appeler notre fonction */
+    ecrire("entrer un chiffre")
+    chiffre1 = lire()
+    foisCinq(chiffre1)
+    /* On peut appeler notre fonction
+    autant de fois qu'on le souhaite
+    dans notre algorithme (programme principale)*/
+    foisCinq(2)
+    foisCinq(3)
+    foisCinq(4)
+    foisCinq(5)
+Fin

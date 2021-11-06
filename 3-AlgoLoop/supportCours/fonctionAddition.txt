@@ -1,0 +1,10 @@
+Fonction 
+Nom: Addition
+Role: "additionner les chiffres 4 et 9"
+Variables: resultat: entier
+Type: entier
+Debut
+    resultat = 4+9
+    retourne resultat
+Fin
+

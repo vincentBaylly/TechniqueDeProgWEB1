@@ -1,0 +1,13 @@
+Nom: tableDeSept
+Role: "faire la multiplication de 7 par les chiffres de 1 a 10"
+Variables: multiplicateur, compteur:entier
+debut
+    /*multiplicateur = 7*/
+    ecrire("entrez un nombre")
+    multiplicateur = lire()
+    Pour compteur de 1 a 10
+    faire
+        ecrire(multiplicateur + " x " + compteur  + "=")
+        ecrire(multiplicateur * compteur)
+    FPour
+Fin

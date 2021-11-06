@@ -1,0 +1,20 @@
+Nom : Nombre le plus grand
+Role   : "Affichage du nombre le plus grand"
+Variables: a, b: entier
+Debut
+    a = 10
+    b = 14
+    écrire("Comparaison de " + a  "et " + b)
+    écrire("le nombre le plus grand est :")
+    Si a > b alors
+        écrire(a)
+    Sinon
+        écrire(b)
+    finsi
+Fin
+/***
+    Sortie de l'algorithme:
+    Comparaison de 10 et 14
+    le nombre le plus grand est :
+    14
+***/

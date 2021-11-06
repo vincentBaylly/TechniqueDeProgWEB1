@@ -1,0 +1,20 @@
+/*** enoncé ***
+    Un utilisateur peut saisir une note entre 0-20
+    Si sa note est entre 0-10 afficher la phrase: "ajourne"
+    Si sa note est entre 10-15 afficher la phrase: "recu"
+    Si sa note est entre 15-20 afficher la phrase: "recu avec mention"
+***/
+Nom: ResultatExamen
+Role: "Recu si la note saisie est superieur ou egale a 10"
+Variables: note:entier
+Debut
+    ecrire("Entrez votre note")
+    note = lire()
+    Si note > 15 et note < 20 alors
+        ecrire("recu avec mention")
+    Sinon si note > 10 et note < 15 alors
+        ecrire("recu")
+    Sinon
+        ecrire("ajourne")
+    finsi
+Fin

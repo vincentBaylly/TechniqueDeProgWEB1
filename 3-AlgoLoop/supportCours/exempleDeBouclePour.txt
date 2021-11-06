@@ -1,0 +1,28 @@
+Nom: Boucle
+Role: Faire une boucle pour
+Variables: compteur, maVariable, maVariableDansLaBoucle:entier
+debut
+    /* Si on veut utiliser une variable 
+       qui garde sa valeur on la déclarera
+       à l'extérieur de la boucle */
+    maVariable = 1
+    Pour compteur de 1 à 5
+        /*
+            Toutes les variables déclarées 
+            à l'intérieur de la boucle voient
+            leurs valeurs reaffectées
+            à chaque itération
+        */
+        maVariableDansLaBoucle = 1
+        maVariable = 1 + maVariable
+        maVariableDansLaBoucle = 1 + maVariableDansLaBoucle
+        /*
+            Si on enleve 1 au compteur a chaque iteration
+            on provoquera une boucle infini
+            car le compteur n'attiendra jamais 5
+            compteur = compteur - 1 
+        */
+    FPour
+    ecrire(maVariableDansLaBoucle)/* 2 */
+    ecrire(maVariable)/* 6 */
+Fin

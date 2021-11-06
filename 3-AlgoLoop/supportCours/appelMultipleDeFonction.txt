@@ -1,0 +1,50 @@
+Fonction
+Nom:multiplicationavecParam
+Role: multiplier 2 nombre envoye en parametre
+Paramètres: chiffre_1, chiffre_2:entier
+Variables: resultat : entier
+Type: entier
+debut
+    resultat = chiffre_1 * chiffre_2
+    retourne resultat
+Fin
+
+Fonction
+Nom:multiplicationsansParam
+Role: multiplier 2 nombre envoye en parametre
+Variables: resultat : entier
+Type: entier
+debut
+    ecrire("saisir deux nombres")
+    nb1=lire()
+    nb2=lire()
+    resultat = chiffre_1 * chiffre_2
+    retourne resultat
+Fin
+
+Nom: AppelMultiplication
+Role: Appel Fonction multiplication
+Variables nb1, nb2, compteur, resultat1, resultat2: entier
+Début
+    /* plutot que d'appeler plusieurs fois ma fonction */
+    multiplication(1,2)
+    multiplication(1,2)
+    multiplication(1,2)
+    multiplication(4,2)
+    multiplication(1,5)
+
+    /* Je peux faire une boucle pour qui executera la fonction
+     une nombre de fois defini */
+    Pour compteur de 1 a 5
+    faire
+        /*equivalent*/
+        ecrire("saisir deux nombres")
+        nb1=lire()
+        nb2=lire()
+        resultat1 = multiplicationavecParam(nb1, nb2)
+        ecrire(resultat1)
+        /*equivalent*/
+        resultat2 = multiplicationsansParam()
+        ecrire(resultat2)
+    FPour
+Fin

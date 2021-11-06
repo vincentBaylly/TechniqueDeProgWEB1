@@ -1,0 +1,7 @@
+/*appel de la fonction addition*/
+Nom: appelFonction
+Role: "appel de la fontion Addition"
+Variables: resultat: entier
+Debut
+    resultat = Addition()
+Fin

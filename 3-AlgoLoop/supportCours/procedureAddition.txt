@@ -1,0 +1,25 @@
+Procedure
+Nom : addition
+Parametres : chiffre_1 : entier, chiffre_2 : entier /* valeurs d'entree */
+variables: total: entier
+Type : entier /* type de la valeur retournee */
+Role : "additionner deux chiffres (4 et 9)"
+Début
+    // ecrire("Entrer deux chiffres")
+    // chiffre_1 = lire()
+    // chiffre_2 = lire()
+    total = chiffre_1 + chiffre_2
+    /* total = 4 + 9 */
+    //retourner total
+    ecrire(total);
+Fin
+
+Nom: programmePrincipale
+Role: appel de la fontion Addition
+Variables: resultat: entier
+Début
+    /* appel de fonction avec l'affectation de la valeur de retour de la variable */
+    resultat = addition(?, ?)
+    /* appel de la procedure sans affectation puisqu'il n'y a pas de valeur de retour */
+    addition(?, ?)
+Fin
