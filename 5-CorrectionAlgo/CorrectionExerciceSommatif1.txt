@@ -1,0 +1,89 @@
+// Exemple de Correction de l exercice sommatif 1
+
+Procédure
+Nom: ProcedureValeurNote
+Role: Teste du resultat 
+Parametre: note :entier
+Début
+    //verification de la note de passage
+    Si  note > 80 alors
+        écrire(“Mention Obtenue”)
+    Sinon Si note > 60 alors
+        écrire(“Examen Réussi”)
+    Sinon
+        écrire(“Examen Echoué”)
+    finsi
+Fin
+
+//Algorithme avec appel de la procedure ProcedureValeurNote
+Nom : processusprincipal
+Rôle   : "Permet de savoir si on a obtenu notre diplôme avec ou sans mention"
+Variables: note, compteur: entiers, monresultat: chaine
+Début
+    //on demande 5 notes à l utilisateur
+    Pour compteur de 1 jusqu a 5
+    Faire
+        écrire(“Saisissez une note entre 0 et 100”)
+        note = lire()
+        //Appel de la procedure
+        ProcedureValeurNote(note)
+    Fpour
+Fin
+
+Fonction
+Nom: FonctionValeurNote
+Role: Teste du resultat 
+type : chaine
+Parametre: note :entier
+Variables: resultat: chaine
+Début
+    //verification de la note de passage
+    Si  note > 80 alors
+        resultat=“Mention Obtenue”
+    Sinon Si note > 60 alors
+        resultat=“Examen Réussi”
+    Sinon
+        resultat=“Examen Echoué”
+    finsi
+    retourne resultat;
+Fin
+
+//Algorithme avec appel de la fonction FonctionValeurNote
+Nom : processusprincipal
+Rôle   : "Permet de savoir si on a obtenu notre diplôme avec ou sans mention"
+Variables: note, compteur: entiers, monresultat: chaine
+Début
+    //on demande 5 notes à l utilisateur
+    Pour compteur de 1 jusqu a 5
+    Faire
+        écrire(“Saisissez une note entre 0 et 100”)
+        note = lire()
+        //Appel de la fonction
+        monresultat = FonctionValeurNote(note)
+        ecrire(monresultat)
+    Fpour
+Fin
+
+//Algorithme sans appel de fonction ni de procedure
+Nom : processusprincipal
+Rôle   : "Permet de savoir si on a obtenu notre diplôme avec ou sans mention"
+Variables: note, compteur: entiers
+Début
+    //on demande 5 notes à l utilisateur
+    Pour compteur de 1 jusqu a 5
+    Faire
+        //Recuperation de la note de l utilisateur
+        écrire(“Saisissez une note entre 0 et 100”)
+        note = lire()
+        //verification de la note de passage
+        Si  note > 80 alors
+            écrire(“Mention Obtenue”)
+        Sinon Si note > 60 alors
+            écrire(“Examen Réussi”)
+        Sinon
+            écrire(“Examen Echoué”)
+        finsi
+        //il n est pas necessaire d incrementer la variable compteur
+        //compteur = compteur + 1
+    FPour
+Fin
