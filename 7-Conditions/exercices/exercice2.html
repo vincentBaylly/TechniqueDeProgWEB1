@@ -4,19 +4,32 @@
     <title>Exercice Les conditions en Javascript</title>
     <script>
       var quantity = 2;
-      var unit = "K";
+      var unit = "G";
       var result;
-      var value = quantity + unit;
+
       if (unit === "K") {
-        result = quantity * 1024;
+        result = quantity * k;
       } else if (unit === "M") {
-        result = quantity * 1048576;
+        result = quantity * 1024 * 1024;
       } else if (unit === "G") {
-        result = quantity * 1073741824;
+        result = quantity * 1024 * 1024 * 1024;
       } else if (unit === "T") {
-        result = quantity * 1099511560222;
+        result = quantity * 1024 * 1024 * 1024 * 1024;
       }
 
+      switch (unit) {
+        case "K":
+          result = quantity * 1024;
+          break;
+        case "M":
+          result = quantity * 1024 * 1024;
+          break;
+        case "G":
+          result = quantity * 1024 * 1024 * 1024;
+        case "T":
+          result = quantity * 1024 * 1024 * 1024 * 1024;
+          break;
+      }
       console.log(result);
     </script>
   </head>

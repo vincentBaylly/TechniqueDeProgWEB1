@@ -3,10 +3,18 @@
   <head>
     <title>Les boucles en Javascript</title>
     <script>
-      var i = 0;
+      /**---- Si on utilise un boucle While dans ce cas ----**/
+      // var age = prompt("Saissisez votre age");
+
+      // while (isNaN(age)) {
+      /**---- On devra repeter l'instruction suivante ----**/
+      //   age = prompt("Saissisez votre age");
+      // }
+
+      /**---- On pourra utiliser un boucle do...while pour eviter de dupliquer de code ----**/
       do {
-        console.log(i++); // Affiche 0
-      } while (false);
+        var age = prompt(`Saissisez votre age`);
+      } while (isNaN(age));
     </script>
   </head>
   <body>

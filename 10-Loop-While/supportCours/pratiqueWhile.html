@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Les boucles en Javascript</title>
+    <script>
+      var nombreDeSiegeRestant = 10;
+      var nombrePassagerDansLavion = 0;
+      while (nombrePassagerDansLavion < 10) {
+        console.log("avant de prendre un siege" + nombreDeSiegeRestant);
+        /**
+         * Si le nombre de siege augmente differemment du nombre de place dans
+         * la boucle il faudra ajouter la condition:
+         * && nombreDeSiegeRestant > 0
+         **/
+        // if(){//taille passager > 6){
+        //     nombreDeSiegeRestant = nombreDeSiegeRestant - 2;
+        // }else{
+        nombreDeSiegeRestant = nombreDeSiegeRestant - 1;
+        console.log("apres de prendre un siege" + nombreDeSiegeRestant);
+        // }
+        //nombrePassagerDansLavion++;
+        console.log("avant de prendre un siege" + nombrePassagerDansLavion);
+        nombrePassagerDansLavion = nombrePassagerDansLavion + 1;
+        console.log("apres de prendre un siege" + nombrePassagerDansLavion);
+      }
+      console.log("la boucle while est termine");
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Les boucles en Javascript</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function categorie() {
+    var age = prompt("Saisissez l'age de l'enfant");
+    if (age != "" && !isNaN(age)) {
+      if (age >= 4 && age <= 6) {
+        alert("L'enfant appartient  à la categorie 'M7 (pré-novice)' ");
+      } else if (age >= 7 && age <= 8) {
+        alert("L'enfant appartient  à la categorie  'M9(novice)'");
+      } else if (age >= 9 && age <= 10) {
+        alert("L'enfant appartient  à la categorie  'M11(atome)'");
+      } else if (age >= 11 && age <= 12) {
+        alert("L'enfant appartient  à la categorie 'M13(pee-wee)'");
+      } else if (age >= 13 && age <= 14) {
+        alert("L'enfant appartient  à la categorie 'M15(bantam)'");
+      } else if (age >= 15 && age <= 17) {
+        alert("L'enfant appartient  à la categorie 'M18(midget)'");
+      } else if (age >= 18 && age <= 21) {
+        alert("L'enfant appartient  à la categorie 'Junior'");
+      } else {
+        alert("L'age saisie n'appartient à aucune categorie");
+      }
+    } else {
+      alert("Erreur:la valeur saisie est invalide");
+    }
+  }
+
+  categorie();
+</script>

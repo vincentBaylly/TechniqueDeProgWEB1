@@ -3,12 +3,22 @@
   <head>
     <title>Les boucles en Javascript</title>
     <script>
-      var i = 0;
-      var a = 10;
-      while (i <= 2 || a > 5) {
-        console.log(i);
-        i = i + 1;
-        a = a - 1;
+      // var i = 0;
+      // while (i <= 2) {
+      //   console.log(i);
+      //   i = i + 1;
+      // }
+      // console.log("la boucle while est termine");
+
+      var conversion = prompt("type de conversion");
+      alert(conversion);
+      if (conversion == 1) {
+        var unite = prompt("unite a convertir");
+      } else if (conversion == 2) {
+        var unite = prompt("unite a convertir");
+        if (unite == 1) {
+          var unite = prompt("entre la valeur a convertir");
+        }
       }
     </script>
   </head>

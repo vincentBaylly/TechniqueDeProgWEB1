@@ -4,9 +4,10 @@
     <title>Exercice Les conditions en Javascript</title>
     <script>
       const expr = "Papayas";
+
       switch (expr) {
-        case "Oranges":
-          console.log("OPne case " + expr);
+        case "Inscript":
+          console.log("One case " + expr);
           break; //sert a arrete l'instruction du case
         case "Mangoes":
         case "Papayas":
@@ -15,6 +16,13 @@
         default:
         //si on ne rentre dans aucun cas le cas defaut s'executera il est facultatif
       }
+
+      if (expr === "Papayas") {
+        console.log("Multi case " + expr);
+      } else if (expr === "Oranges" || expr.length > 100) {
+        console.log("One case " + expr);
+      }
+      console.log("fin du switch");
     </script>
   </head>
   <body>

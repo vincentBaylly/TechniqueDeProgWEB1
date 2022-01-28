@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Les conditions en Javascript</title>
+    <script>
+      var age = 14;
+      if (age >= 18) {
+        status = "adulteQC";
+      } else if (age >= 21) {
+        status = "adulteCA";
+      } else {
+        status = "mineur";
+      }
+      var statut = age >= 18 ? (age >= 21 ? "adulteCA" : "adulteQC") : "mineur";
+
+      console.log(statut);
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Exercice Les conditions en Javascript</h1>
+    </div>
+  </body>
+</html>

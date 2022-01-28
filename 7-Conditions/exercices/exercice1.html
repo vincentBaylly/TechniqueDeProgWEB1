@@ -7,14 +7,24 @@
       var var1 = "Je suis une chaîne de caractères";
       var var2 = " concaténée à partir de plusieurs ";
       var var3 = "sous-chaînes contenues dans var1, var2 et var3.";
+
+      var var4 = var1.toUpperCase;
+      console.log(var4); //JE SUIS UNE CHAINE DE CARACTERE
+      const str = "Life, the universe and everything. Answer:";
+
+      console.log(`voici la reponse ${str} ${str.length}`);
+      console.log(str + " " + str.length);
+      var texteComplet = var1 + var2 + var3;
       /* Ne pas toucher à la déclaration de texteComplet */
       var texteComplet = var1 + var2 + var3;
       console.log(texteComplet.length);
       /* La condition ici */
+      /* La methode length permet de retourner le nombre de lettre
+       d une chaine de caractere */
       if (texteComplet.length > 100) {
-        //alert("C'est une grande phrase");
+        alert("C'est une grande phrase");
       } else {
-        //alert("C'est une petite phrase");
+        alert("C'est une petite phrase");
       }
     </script>
   </head>

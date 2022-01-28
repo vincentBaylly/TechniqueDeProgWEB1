@@ -1,0 +1,21 @@
+/**
+    si je souhaites afficher le decompte 
+    de 5 a 1
+sortie de mon algorithme:
+5
+4
+3
+2
+1
+*/
+Nom: decompte
+Role : "faire le decompte"
+Varaibles: decompte, compteur: entier
+Debut
+    decompte = 5
+    Pour compteur de 1 a 5
+    faire
+        ecrire(decompte)
+        decompte = decompte - 1
+    Fpour
+Fin
